@@ -71,9 +71,9 @@ const getWeatherData = async () => {
         // w_minTem.innerHTML = `Min: ${main.temp_min.toFixed() - 273}&#176`;
         // w_maxTem.innerHTML = `Max: ${main.temp_max.toFixed() - 273}&#176`;
 
-        w_temperature.innerHTML = `${(main.temp - 273).toFixed(2)}&#176`;
-        w_minTem.innerHTML = `Min: ${(main.temp_min - 273).toFixed(2)}&#176`;
-        w_maxTem.innerHTML = `Max: ${(main.temp_max - 273).toFixed(2)}&#176`;
+        w_temperature.innerHTML = `${(main.temp - 273).toFixed()}&#176`;
+        w_minTem.innerHTML = `Min: ${(main.temp_min - 273).toFixed()}&#176`;
+        w_maxTem.innerHTML = `Max: ${(main.temp_max - 273).toFixed()}&#176`;
 
         w_feelsLike.innerHTML = `${main.feels_like.toFixed(2)}&#176`;
         w_humidity.innerHTML = `${main.humidity}%`;
